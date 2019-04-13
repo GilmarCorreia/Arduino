@@ -1,2 +1,2 @@
-# Arduino
-Projetos desenvolvidos para Arduino e ESP32, utilizando a Arduino IDE
+# Arduino-Projects
+Projetos de Arduino feito nos cursos da DO ZERO
