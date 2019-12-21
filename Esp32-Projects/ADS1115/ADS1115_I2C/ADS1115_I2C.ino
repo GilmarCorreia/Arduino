@@ -9,12 +9,14 @@ void setup(void){
 }
 
 void loop(void) {
-  int16_t adc0,adc1,adc2,adc3;
+  int16_t adc0,adc1,adc2,adc3, arpot;
 
   adc0 = ads.readADC_SingleEnded(0);
   adc1 = ads.readADC_SingleEnded(1);
   adc2 = ads.readADC_SingleEnded(2);
   adc3 = ads.readADC_SingleEnded(3);
+  arpot = analogRead(1);
+
   
   Serial.print("AIN0: "); 
   Serial.print(adc0);
@@ -23,6 +25,9 @@ void loop(void) {
   Serial.print(" AIN2: "); 
   Serial.print(adc2);
   Serial.print(" AIN3: "); 
-  Serial.println(adc3);
+  Serial.print(adc3);
+  Serial.print(" pot: "); 
+  Serial.println(arpot);
+  
   
 }
